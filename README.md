@@ -48,12 +48,6 @@ Model development and evaluation:
 3. **Ridge Regression** (α = 0.1, 1.0, 10.0)
 4. **Lasso Regression** (α = 0.1, 1.0, 10.0)
 
-## Results
-Models are compared using:
-
-## Motivation
-Bike-sharing systems have become integral to urban transportation, reducing traffic congestion and carbon emissions. Accurate demand prediction helps operators optimize bike distribution, improve service availability, and enhance user satisfaction. This project explores machine learning approaches to forecast hourly bike rental demand based on temporal patterns and weather conditions.
-
 ## Features Description
 The dataset includes the following key features:
 - **Temporal**: `hr` (hour), `mnth` (month), `weekday`, `yr` (year)
@@ -67,9 +61,7 @@ The dataset includes the following key features:
     ```bash
     pip install pandas numpy matplotlib seaborn scikit-learn
     ```
-3. Download the dataset from [UCI Repository](https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset)
-4. Place `hour.csv` in the `data/` directory
-5. Open and run notebooks in order:
+3. Open and run notebooks in order:
     - `01_exploration.ipynb` for exploratory data analysis
     - `02_modeling.ipynb` for model training and evaluation
 
@@ -79,18 +71,22 @@ The dataset includes the following key features:
 - **MAE** (Mean Absolute Error)
 - **R²** (Coefficient of Determination)
 
+## Results Summary
+
 The sinusoidal and polynomial feature model showed significant improvement over the baseline.
 
-📊 MODEL COMPARISON:
-                       Model       RMSE        MAE       R²
-               Lasso (α=0.1)  90.385409  63.814183 0.742005
-              Ridge (α=10.0)  90.525734  63.909343 0.741203
-               Ridge (α=1.0)  90.596337  63.962193 0.740799
-               Ridge (α=0.1)  90.606310  63.969145 0.740742
-Linear Regression (sin+poly)  90.607468  63.969939 0.740736
-               Lasso (α=1.0)  91.679555  64.223806 0.734564
-              Lasso (α=10.0) 104.404205  73.952131 0.655768
-Linear Regression (baseline) 153.379853 115.057467 0.257064
+### Model Comparison
+
+| Model | RMSE | MAE | R² |
+|-------|------|-----|-----|
+| Lasso (α=0.1) | 90.385409 | 63.814183 | 0.742005 |
+| Ridge (α=10.0) | 90.525734 | 63.909343 | 0.741203 |
+| Ridge (α=1.0) | 90.596337 | 63.962193 | 0.740799 |
+| Ridge (α=0.1) | 90.606310 | 63.969145 | 0.740742 |
+| Linear Regression (sin+poly) | 90.607468 | 63.969939 | 0.740736 |
+| Lasso (α=1.0) | 91.679555 | 64.223806 | 0.734564 |
+| Lasso (α=10.0) | 104.404205 | 73.952131 | 0.655768 |
+| Linear Regression (baseline) | 153.379853 | 115.057467 | 0.257064 |
 
 ## Requirements
 ```
@@ -103,5 +99,5 @@ scikit-learn
 
 ## Team Contribution
 
-Timothy Tan - Data Exploration
-Michael Persson - Feature Engineering, Model Training, Model Evaluation
+- Timothy Tan - Data Exploration
+- Michael Persson - Feature Engineering, Model Training, Model Evaluation
