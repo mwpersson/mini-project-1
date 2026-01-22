@@ -48,13 +48,6 @@ Model development and evaluation:
 3. **Ridge Regression** (α = 0.1, 1.0, 10.0)
 4. **Lasso Regression** (α = 0.1, 1.0, 10.0)
 
-## Features Description
-The dataset includes the following key features:
-- **Temporal**: `hr` (hour), `mnth` (month), `weekday`, `yr` (year)
-- **Calendar**: `holiday`, `workingday`
-- **Weather**: `temp` (temperature), `hum` (humidity), `windspeed`, `weathersit` (weather situation: clear, mist, light rain/snow)
-- **Target**: `cnt` (count of total bike rentals including casual and registered users)
-
 ## Setup Instructions
 1. Clone or download this repository
 2. Install required dependencies:
